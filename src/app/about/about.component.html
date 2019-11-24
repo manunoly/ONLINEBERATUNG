@@ -1,0 +1,41 @@
+<h3 style="padding-top: 30px;">Solución creada por Manuel Almaguer <a target="_blank"
+    href="https://github.com/manunoly/ONLINEBERATUNG">Código Fuente</a></h3>
+
+<ol style="padding-top: 30px;">
+  <li>
+    La Solución fue desarrollada con PHP orientado a objetos y Angular para el front
+  </li>
+  <br>
+  <li>
+    Lógica de Paquetes
+    <img style="margin: auto; max-width: 600px;" src="assets/package.png">
+  </li>
+
+  <li>
+    Modelo de Clases PHP
+    <img style="margin: auto; max-width: 600px;" src="assets/classDesign.png">
+  </li>
+
+  <li>El Algoritmo encargado de la solución fue realizado con <b>recursividad</b> para intentar encontrar un camino que
+    complete
+    la duración de la sesión</li>
+  <li>En la solución se crean tantos Tópicos como sean necesarios para ubicar todas las conferencias</li>
+  <li>Las Sesiones en esta versión son datos estáticos pero se gestionan dinámicamente,
+    de forma tal que en la próxima versión se pueda implementar una vista donde el usuario los defina,
+    ejemplo crear una nueva sesión (Break) o variar el tiempo de las mismas</li>
+  <li>Se realizaron validaciones con expresiones regulares para asegurar que el título de la conferencia no contenga
+    números</li>
+  <li>La entrada del programa es un fichero,se utilizó la función unique para renombrar archivo y asegurar que no se
+    sobreescriba</li>
+  <li>Al asignar una conferencia en una sesión se calcula la hora de inicio de la conferencia
+    según la hora de inicio de la sesión y la duración de las conferencias anteriores a esta en la sesión</li>
+  <li>Se verifica que exista la carpeta upload y si no existe se crea</li>
+  <li>Se realiza tratamiento de errores en el front para mostrar siempre una respuesta al usuario</li>
+  <li>Se crearon controladores para gestionar las peticiones del front y que utilizan el modelo de clases para
+    manejar los datos</li>
+  <li>El front esta divididos en componentes, contiene un servicio llamado api que se utiliza para el intercambio con el
+    back</li>
+  <li>El código se transpila desde typescript a javascript y comprime para hacerlo lo más liviano posible</li>
+  <li>Se incluyó bootsrap para dar estilo a la interfaz</li>
+
+</ol>

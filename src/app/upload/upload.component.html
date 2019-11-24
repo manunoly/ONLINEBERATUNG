@@ -1,8 +1,5 @@
 <div class="container" style="padding: 30px;">
 
-  <button type="button" class="btn btn-link" routerLink="/inicio">Back to home</button>
-  <br>
-
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group">
 
@@ -39,7 +36,7 @@
       <h3 class="h3">{{topic?.name}}</h3>
 
       <div *ngFor="let sesion of topic.sesion">
-        <h5 *ngFor="let conf of sesion.conferences;let i=index">
+        <h5  *ngFor="let conf of sesion.conferences;let i=index">
             {{conf?.schedule}} {{conf?.name}} <span *ngIf="conf.time">{{conf?.time}}min</span>
         </h5>
       </div>

@@ -1,3 +1,25 @@
+# Readme
+
+The URL server must be 
+
+http://YOUR_SERVER/ONLINEBERATUNG
+
+1.  First, ensure that PHP is configured to allow file uploads. 
+	In your "php.ini" file, search for the file_uploads directive, and set it to On:  file_uploads = On
+2.  Set the right permision to the project folder,  in unix system must be 755.
+	sudo chown www-data:www-data /var/www/html/ONLINEBERATUNG
+	sudo chmod -R 755 /var/www/html/ONLINEBERATUNG
+3. Copy the project in root
+4. Be sure your php is config, use http://SERVER_DIR/ONLINEBERATUNG/p.php you will se phpinfo() result
+
+the solution work as a single page aplication, to enable F5 clear url you must activate Apache Module mod_rewrite
+http://httpd.apache.org/docs/current/mod/mod_rewrite.html 
+
+command   sudo a2enmod rewrite  can help you.
+
+be sure you follow Angular instruction
+https://angular.io/guide/deployment
+
 # ConferencePlanner
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.

@@ -8,12 +8,16 @@ import { InicioComponent } from './inicio/inicio.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProblemComponent } from './problem/problem.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UploadComponent,
-    InicioComponent
+    InicioComponent,
+    ProblemComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,129 @@
+<h3 class="text-primary">Requerimientos:</h3>
+<ul>
+  <li>
+    La solución debe estar implementada en PHP, con una interfaz de usuario que permita el ingreso de la información y
+    visualizar los resultados.
+  </li>
+  <li>
+    La aplicación debe recibir como entrada un archivo de texto.
+  </li>
+  <li>
+    Utilizar únicamente elementos de su autoría.
+  </li>
+</ul>
+
+<h3 class="text-primary">Reglas:</h3>
+<ol>
+  <li>
+    Necesitamos tener la posibilidad de compilar y ejecutar el código, así que por favor haznos llegar tu solución como
+    un archivo comprimido que contenga el código fuente y los archivos de soporte.
+  </li>
+  <li>
+    Adicionalmente al código, incluir una breve explicación del diseño de la solución, así como instrucciones detalladas
+    de cómo ejecutar la aplicación.
+  </li>
+  <li>
+    Evaluaremos varios aspectos como el diseño de la solución y habilidades para programar usando orientación a objetos.
+    Esperamos un código de calidad que pudiese ser puesto en producción, que pueda ser ejecutado, mantenido y extendido.
+    No necesitas adornar demasiado tu solución pero sí nos interesa que sea algo más que un algoritmo sencillo.
+  </li>
+  <li>
+    Te pedimos que nos hagas llegar la solución al problema que hayas elegido en máximo tres días a partir del momento
+    de recepción de este correo con las instrucciones.
+  </li>
+</ol>
+
+<h3 class="text-primary">
+  Problema: Temas de conferencia. <br>
+  Planteamiento del problema:
+</h3>
+<p>Se ha decidido planificar una conferencia y se han recibido muchas propuestas lo que ha generado dificultad para que
+  todas quepan en los espacios previstos para el día del evento. Debido a que existen muchas posibilidades se necesita
+  crear un programa que ayude a organizar el evento.</p>
+
+<h3 class="text-primary">
+  Características
+
+</h3>
+<ol>
+  <li>La conferencia está dividida en varias temáticas.</li>
+  <li>Cada temática tiene una sesión en la mañana y otra en la tarde.</li>
+  <li>Cada sesión contiene múltiples charlas.</li>
+  <li>Las sesiones de la mañana empiezan a las 9 AM y deben terminar a las 12 del medio día, para el almuerzo.</li>
+  <li>Las sesiones de la tarde empiezan a la 1 PM y deben terminar a tiempo para el evento social.</li>
+  <li>El evento social no puede empezar antes de las 4:00 ni después de las 5:00.</li>
+  <li>Ninguno de los títulos de las charlas contienen números.</li>
+  <li>La duración de todas las charlas está dada en minutos (no horas).</li>
+  <li>Se asume que los presentadores serán muy puntuales por lo tanto no hay necesidad de programar descansos entre
+    sesiones.</li>
+  <li>Existen varias formas de resolver este problema y se van a generar diferentes combinaciones, se incluye un ejemplo
+    pero no se tiene que replicar el mismo resultado.</li>
+</ol>
+
+
+<h3 class="text-primary">
+  Ejemplo:
+  <br>
+
+  Entrada:
+</h3>
+<p>
+  HOW TO USE E-LEARNING FOR TESTING AND ASSESSING LARGE CLASSES 60min
+  THREE-DIMENSIONAL COLLABORATIVE VIRTUAL ENVIRONMENTS TO ENHANCE LEARNING MATHEMATICS 45min
+  DO STUDENT RESPONSES DECREASE IF TEACHERS KEEP ASKING QUESTIONS THROUGH STUDENT RESPONSE SYSTEMS: A QUANTITATIVE
+  RESEARCH 30min
+  A SEQUENTIAL ANALYSIS OF TEACHING BEHAVIORS TOWARD THE USE OF BLACKBOARD LEARNING MANAGEMENT SYSTEM 45min
+  THE UAV SIMULATION COMPLEX FOR OPERATOR TRAINING 45min
+  THE IMPACT OF E-LEARNING ON LEARNER KNOWLEDGE SHARING QUALITY 60min
+  ASSESSING OPEN-BOOK-OPEN-WEB EXAM IN HIGH SCHOOLS: THE CASE OF A DEVELOPING COUNTRY 60min
+  RESEARCH ON CHANGE AND GROWTH OF STUDENTS AND TEACHERS EXPERIENCED PROBLEM BASED LEARNING 45min
+  E-LEARNING ASSISTED DRAMATIZATION FOR COMMUNICATIVE LANGUAGE ABILITY AND COLLABORATIVE LEARNING 30min
+  LEARNING READINESS WHEN SHARING KNOWLEDGE WHILE E-LEARNING 30min
+  LEARNING RELATED DEVICE USAGE OF GERMAN AND INDIAN STUDENTS 45min
+  TWENTY-FIRST CENTURY INTERVIEWING FOR TWENTY-FIRST CENTURY JOBS. ARE WE PREPARING OUR STUDENTS FOR TODAY'S JOB MARKET?
+  60min
+  ONLINE GRADUATE DEGREES: PERCEPTIONS OF MOROCCAN UNIVERSITY STUDENTS 60min
+  DEVELOPMENT OF AN ONLINE LABORATORY: APPLICATION FOR THE CHARACTERIZATION OF NTC TEMPERATURE SENSOR 45min
+  LEARNING STRATEGIES THAT CONTRIBUTE TO ACADEMIC EFFICIENCY IN RELATION TO THE BUSINESS SCHOOL STUDENT'S LEARNING
+  STYLES 30min
+  STUDENTS' TEAM-LEARNING INSPIRES CREATIVITY 30min
+  FLIPPED CLASSROOM ASSESSMENT: A LEARNING PROCESS APPROACH 60min
+  OPEN PROFESSIONAL DEVELOPMENT OF MATH TEACHERS THROUGH AN ONLINE COURSE 30min
+  GENERATING GRAPHS IN VIRTUAL REALITY 30min
+</p>
+
+<h3> Salida: <br>
+  TOPIC 1:</h3>
+<p>
+  09:00AM HOW TO USE E-LEARNING FOR TESTING AND ASSESSING LARGE CLASSES 60min
+  10:00AM THREE-DIMENSIONAL COLLABORATIVE VIRTUAL ENVIRONMENTS TO ENHANCE LEARNING MATHEMATICS 45min
+  10:45AM DO STUDENT RESPONSES DECREASE IF TEACHERS KEEP ASKING QUESTIONS THROUGH STUDENT RESPONSE SYSTEMS: A
+  QUANTITATIVE RESEARCH 30min
+  11:15AM A SEQUENTIAL ANALYSIS OF TEACHING BEHAVIORS TOWARD THE USE OF BLACKBOARD LEARNING MANAGEMENT SYSTEM 45min
+  12:00PM LUNCH
+  01:00PM ONLINE GRADUATE DEGREES: PERCEPTIONS OF MOROCCAN UNIVERSITY STUDENTS 60min
+  02:00PM THE UAV SIMULATION COMPLEX FOR OPERATOR TRAINING 45min
+  02:45PM LEARNING RELATED DEVICE USAGE OF GERMAN AND INDIAN STUDENT 45min
+  03:30PM LEARNING STRATEGIES THAT CONTRIBUTE TO ACADEMIC EFFICIENCY IN RELATION TO THE BUSINESS SCHOOL STUDENT'S
+  LEARNING STYLES 30min
+  04:00PM STUDENTS' TEAM-LEARNING INSPIRES CREATIVITY 30min
+  04:30PM GENERATING GRAPHS IN VIRTUAL REALITY 30min
+  05:00PM SOCIAL EVENT
+</p>
+
+<h3>TOPIC 2:</h3>
+<p>
+  09:00AM ASSESSING OPEN-BOOK-OPEN-WEB EXAM IN HIGH SCHOOLS: THE CASE OF A DEVELOPING COUNTRY 60min
+  10:00AM TWENTY-FIRST CENTURY INTERVIEWING FOR TWENTY-FIRST CENTURY JOBS. ARE WE PREPARING OUR STUDENTS FOR TODAY'S JOB
+  MARKET? 60min
+  11:00AM E-LEARNING ASSISTED DRAMATIZATION FOR COMMUNICATIVE LANGUAGE ABILITY AND COLLABORATIVE LEARNING 30min
+  11:30AM LEARNING READINESS WHEN SHARING KNOWLEDGE WHILE E-LEARNING 30min
+  12:00PM LUNCH
+  01:00PM RESEARCH ON CHANGE AND GROWTH OF STUDENTS AND TEACHERS EXPERIENCED PROBLEM BASED LEARNING 45min
+  01:45PM DEVELOPMENT OF AN ONLINE LABORATORY: APPLICATION FOR THE CHARACTERIZATION OF NTC TEMPERATURE SENSOR 45min
+  02:30PM OPEN PROFESSIONAL DEVELOPMENT OF MATH TEACHERS THROUGH AN ONLINE COURSE 30min
+  03:00PM FLIPPED CLASSROOM ASSESSMENT: A LEARNING PROCESS APPROACH 60min
+  04:00PM THE IMPACT OF E-LEARNING ON LEARNER KNOWLEDGE SHARING QUALITY 60min
+  05:00PM SOCIAL EVENT
+
+</p>

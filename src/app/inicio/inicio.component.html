@@ -1,10 +1,23 @@
 <div class="container" style="padding: 30px;">
 
-  <h5>
-    Create a software to schedule conferences event
+  <h5 class="text-primary">
+    Elementos utilizados para el desarrollo de este proyecto
   </h5>
 
+  <ol>
+    <li>El Algoritmo encargado de la solución cuenta con <b>recursivad</b> para intentar encontrar un camino que
+      complete la duración de la sesión
+    </li>
+    <li>En la solución se crean tantos Tópicos como sean necesarios para ubicar todas las conferencias</li>
+    <li>Las Sesiones en esta versión son datos estáticos pero se gestionan dinámicamente, 
+    de forma tal que en la próxima versión se pueda implementar una vista donde el usuario los defina, 
+    ejemplo crear una nueva sesión (Break) o variar el tiempo de las mismas</li>
+    <li>Se realizaron validaciones con expresiones regulares para asegurar que el título de la conferencia no contenga
+        números</li>
+    <li>La entrada del programa es un fichero,se utilizó la función unique para renombrar archivo y asegurar que no se
+        sobreescriba</li>
+  </ol>
 
-  <button class="btn btn-primary btn-block" routerLink="/upload">Start proccess</button>
+  <button class="btn btn-primary btn-outline" routerLink="/about">Conozca más en la sección About and Solution</button>
 
 </div>

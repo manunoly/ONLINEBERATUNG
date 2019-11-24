@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class ApiService {
   headers = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
-  public url = 'http://localhost:8080/';
+  public url = 'backend/';
 
   constructor(private http: HttpClient) { }
 
