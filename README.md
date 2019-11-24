@@ -14,14 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Running php in test
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run php -S 127.0.0.1:8080 -t ./src/backend/ from the main project folder to start running php as api server, You can find class in model folder, and spacial algoritm with recursive soluticion in a Algorithm Class.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
