@@ -1,0 +1,52 @@
+<div class="container" style="padding: 30px;">
+
+  <button type="button" class="btn btn-link" routerLink="/inicio">Back to home</button>
+  <br>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+
+      <input class="space" type="file" placeholder="upload your txt file" accept=".txt" name="conferences"
+        (change)="onFileSelect($event)" />
+      <button class="btn btn-primary" type="submit">Upload</button>
+
+    </div>
+  </form>
+
+  <div class="alert alert-danger" role="alert" *ngIf="uploadResponse && uploadResponse.status === 'error'">
+    {{uploadResponse?.message}}
+  </div>
+  <br>
+
+  <div class="form-group">
+
+    <div *ngIf="uploadResponse && uploadResponse.status === 'success'">
+      <a class="space"> File received </a>
+      <button class="btn btn-primary" (click)="processFile()">Process File</button>
+    </div>
+
+  </div>
+  <br>
+
+  <div class="alert alert-danger" role="alert" *ngIf="fileProcess && fileProcess.status === 'error'">
+    {{fileProcess?.message}}
+  </div>
+
+  <div *ngIf="fileProcess && fileProcess.status === 'success'">
+
+    <div *ngFor="let topic of dataShow">
+
+      <h3 class="h3">{{topic?.name}}</h3>
+
+      <div *ngFor="let sesion of topic.sesion">
+        <h5 *ngFor="let conf of sesion.conferences;let i=index">
+            {{conf?.schedule}} {{conf?.name}} <span *ngIf="conf.time">{{conf?.time}}min</span>
+        </h5>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
